@@ -1,2 +1,2 @@
-探海工作室
-测试一
+Git is a distributed version control system.
+Git is free software
