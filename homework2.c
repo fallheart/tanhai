@@ -1,8 +1,8 @@
 #include<stdio.h>
-
-int main()
+void main()
 {
 	char cLetter;
+	char cLetter2;
 	printf("Please enter one Letter\n");
 	scanf("%c",&cLetter);
 	printf("Letter means day is:");
@@ -18,19 +18,16 @@ int main()
 		printf("Wednesday\n");
 		break;
 	case't':
-		printf("Error,please enter one more letter\n");
-		scanf("%c",&cLetter);
-		printf("Letter means day is:");
-		switch(cLetter)
+		getchar();
+		scanf("%c",&cLetter2);
+		if(cLetter2='u')
 		{
-		case'u':
 			printf("Tuesday\n");
-			break;
-		case'h':
-			printf("Thursday\n");
-			break;
 		}
-		break;
+		else if(cLetter2='h')
+			printf("Thursday\n");
+		else
+			printf("You enter the char is wrong!\n");
 	default:
 		printf("You enter the char is wrong!\n");		
 		break;
